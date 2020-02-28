@@ -18,6 +18,4 @@ namespace Tasker
         [BindProperty]
         public Task NewTask { get; set; }
     }
-
-    public class CreateTask { }
 }

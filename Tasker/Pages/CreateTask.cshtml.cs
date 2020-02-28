@@ -5,6 +5,9 @@ namespace Tasker
 {
     public class CreateTaskModel : PageModel
     {
+        [BindProperty]
+        public Task NewTask { get; set; }
+
         public void OnGet()
         {
 
@@ -14,8 +17,5 @@ namespace Tasker
         {
             return RedirectToPage("Index");
         }
-
-        [BindProperty]
-        public Task NewTask { get; set; }
     }
 }
